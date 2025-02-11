@@ -42,7 +42,7 @@ function page() {
           </li>
           <li>
             <br />
-            <p>Chef's Bio: </p>
+            <p>Chef&apos;s Bio: </p>
             <p>Chef David Martinez - Our Culinary Maestro</p>
             With over 5 years of culinary experience, Chef David Martinez leads
             the kitchen at Delight-Dine-Resto with unparalleled expertise and
@@ -122,7 +122,7 @@ function page() {
             At DelightDine Hub Resto, we have meticulously designed our interior
             to create an ambiance that is both elegant and comfortable. The warm
             lighting, stylish decor, and thoughtfully arranged seating provide
-            the perfect setting for any occasion, whether it's an intimate
+            the perfect setting for any occasion, whether it&apos;s an intimate
             dinner, a family gathering, or a special celebration. Our inviting
             atmosphere is complemented by soft music and the enticing aromas of
             our expertly prepared dishes, making every visit a feast for the
