@@ -1,0 +1,17 @@
+.Cli {
+  font-size: 17px;
+  margin-top: 25px;
+  margin-right: 25px;
+  cursor: pointer;
+}
+/* .Cli:hover {
+  color: #0cabe5;
+} */
+
+.active {
+  color: rgb(245, 172, 146);
+  font-size: 17px;
+  margin-top: 25px;
+  margin-right: 25px;
+  cursor: pointer;
+}

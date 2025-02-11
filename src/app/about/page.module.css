@@ -1,0 +1,53 @@
+.divSection {
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.divSection h1 {
+  font-size: xx-large;
+}
+.aboutH1 {
+  color: orangered;
+}
+.divSection ul {
+  margin: 40px 0 30px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.divSection li {
+  margin: 15px 0 7px 0;
+}
+.divSection li p {
+  margin: 30px 0px 15px 0;
+  font-size: x-large;
+}
+
+.restoClass {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.restoClass li {
+  margin: 0;
+}
+.restoIntroP {
+  max-width: 600px;
+  height: auto;
+  margin-left: 50px;
+  margin-top: 100px;
+}
+.restoIntroP h1 {
+  font-size: 40px;
+}
+.restoImg {
+  min-width: 38%;
+  height: auto;
+}
+
+.aboutImg {
+  margin-left: 42%;
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+}

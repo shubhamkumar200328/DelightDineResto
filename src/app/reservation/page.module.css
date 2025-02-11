@@ -1,0 +1,47 @@
+.divSection {
+  text-align: left;
+  width: 100%;
+  min-height: 1000px;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.divSection h1 {
+  text-align: center;
+  margin: 40px 0;
+  font-size: xx-large;
+}
+
+.divSection h2 {
+  text-align: center;
+  margin: 20px 0;
+  font-size: x-large;
+}
+
+.divSection span {
+  font-size: x-large;
+}
+
+.divSection p {
+  margin: 40px 0;
+}
+.BooTable {
+  text-align: center;
+  margin: 40px;
+  border: 2px solid white;
+  border-radius: 7px;
+  padding: 5px;
+  font-size: 25px;
+  width: 200px;
+  height: auto;
+  cursor: pointer;
+  color: orangered;
+}
+
+.dynaminFrom {
+  min-height: 1000px;
+  width: 100%;
+  font-size: xx-large;
+  margin: 40px 0;
+  text-align: center;
+}

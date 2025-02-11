@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* #4e6c50 #f2deba #6d4a4a #630000 #563232*/
+body {
+  /* background-color: #562e2e; */
+  color: aliceblue;
+
+  background: rgb(86, 46, 46);
+  background: linear-gradient(
+    0deg,
+    rgba(86, 46, 46, 1) 53%,
+    rgba(11, 58, 26, 1) 100%
+  );
+
+  /* background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(11, 58, 26, 1) 100%
+  ); */
+}
+.CAbout {
+  border: 1.5px solid #f0f8ff;
+  border-radius: 3px;
+  margin-left: 11px;
+  padding: 3px;
+}
+.CHeader {
+  margin: 0 0 70px 0;
+  padding: 7px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: rgb(240, 248, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(240, 248, 255, 1) 8%,
+    rgba(99, 0, 0, 1) 73%,
+    rgba(58, 11, 11, 1) 100%
+  );
+}
+.Clogo {
+  color: #c46e06;
+  display: flex;
+  flex-direction: row;
+  font-size: xx-large;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.ClogoImg {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+
+.Cul {
+  display: flex;
+  flex-direction: row;
+}
+.Cli {
+  font-size: 17px;
+  margin-top: 25px;
+  margin-right: 25px;
+  cursor: pointer;
+}
+.Cli:hover {
+  color: rgb(245, 172, 146);
+}
+
+.CblogDiv1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* #820000 */
+
+.CblogPostDiv {
+  background-color: #3a0b0b;
+  color: aliceblue;
+  border: none;
+  border-radius: 11px;
+  text-align: center;
+  padding: 0 0 5px 0;
+  min-width: 300px;
+  min-height: 350px;
+  margin-top: 20px;
+}
+.Ccircle {
+  background-color: aliceblue;
+  border: none;
+  border-radius: 11px;
+  text-align: center;
+  margin: 0 0 20px 0;
+  /* align-items: center; */
+  padding: 0px;
+  min-width: 300px;
+  min-height: 300px;
+}
+.foodImg {
+  width: 300px;
+  height: 300px;
+  border-radius: 11px;
+}
+
+.shareDiv {
+  min-height: 243px;
+  width: 100%;
+}

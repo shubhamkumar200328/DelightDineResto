@@ -1,0 +1,15 @@
+.ordernow {
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 3px;
+  width: 40%;
+  margin-left: 30%;
+}
+.sharemeals {
+  font-size: x-large;
+  font-weight: bolder;
+  border: 3px solid;
+  border-radius: 11px;
+  color: orangered;
+  padding: 4px;
+}
