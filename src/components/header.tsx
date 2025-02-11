@@ -33,7 +33,7 @@ function Header() {
               <Navlink href="/reservation">Reserve YourTable</Navlink>
             </li>
             <li className="Cli">
-              <Navlink href="/yourprofile">Signup/login</Navlink>
+              <Navlink href="/login">Signup/login</Navlink>
             </li>
           </ul>
         </div>
