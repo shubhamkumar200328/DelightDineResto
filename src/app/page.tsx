@@ -17,12 +17,13 @@ export default function Home() {
         <div>
           <div className={classes.hero}>
             <h1>
-              Welcome to DelightDine Hub Resto – A Symphony of Flavors Await.
+              Welcome to DelightDine Hub Resto, a Symphony of Flavors Await.
             </h1>
             <p>
-              "Join us at DelightDine Hub Resto, where every meal is a
+              &quot;Join us at DelightDine Hub Resto, where every meal is a
               celebration of flavor, quality, and exceptional service. Come and
-              taste the difference. Reserve Your Table and Explore Our Menu"
+              taste the difference. Reserve Your Table and Explore Our
+              Menu&quot;
             </p>
           </div>
           <div className={classes.cta}>
@@ -40,52 +41,54 @@ export default function Home() {
           </p>
           <ul>
             <li>
-              Personalized Welcome: "Our friendly staff greets you with a warm
-              welcome, ready to cater to your every need from the very start.
+              Personalized Welcome: &quot;Our friendly staff greets you with a
+              warm welcome, ready to cater to your every need from the very
+              start&quot;.
             </li>
             <li>
-              Effortless Reservations: "Making a reservation is simple and
+              Effortless Reservations: &quot;Making a reservation is simple and
               convenient through our online booking system, ensuring you have a
-              perfect table waiting for you.
+              perfect table waiting for you&quot;.
             </li>
             <li>
-              Tailored Dining: "Whether you’re here for a casual lunch or a
-              special celebration, our team personalizes your dining experience
-              to suit your preferences and needs.
+              Tailored Dining: &quot;Whether you&apos;re here for a casual lunch
+              or a special celebration, our team personalizes your dining
+              experience to suit your preferences and needs&quot;.
             </li>
             <li>
-              Culinary Journey: "Our chefs prepare each dish with passion and
-              precision, using the freshest ingredients to create flavors that
-              delight and inspire."
+              Culinary Journey: &quot;Our chefs prepare each dish with passion
+              and precision, using the freshest ingredients to create flavors
+              that delight and inspire.&quot;
             </li>
             <li>
-              Interactive Service: "Enjoy an engaging dining experience with
-              knowledgeable servers who can recommend dishes and pairings to
-              enhance your meal."
+              Interactive Service: &quot;Enjoy an engaging dining experience
+              with knowledgeable servers who can recommend dishes and pairings
+              to enhance your meal.&quot;
             </li>
             <li>
-              Ambiance and Comfort: "Immerse yourself in a thoughtfully designed
-              atmosphere that blends elegance with comfort, making every visit
-              memorable."
+              Ambiance and Comfort: &quot;Immerse yourself in a thoughtfully
+              designed atmosphere that blends elegance with comfort, making
+              every visit memorable.&quot;
             </li>
             <li>
-              Efficient Ordering: "Experience swift and accurate service with
-              our streamlined ordering process, ensuring you spend more time
-              savoring your meal and less time waiting."
+              Efficient Ordering: &quot;Experience swift and accurate service
+              with our streamlined ordering process, ensuring you spend more
+              time savoring your meal and less time waiting.&quot;
             </li>
             <li>
-              Seamless Payment: "Conclude your visit with our easy and secure
-              payment options, designed for your convenience."
+              Seamless Payment: &quot;Conclude your visit with our easy and
+              secure payment options, designed for your convenience.&quot;
             </li>
             <li>
-              Feedback and Improvement: "We value your feedback and continuously
-              strive to enhance your experience with every visit."
+              Feedback and Improvement: &quot;We value your feedback and
+              continuously strive to enhance your experience with every
+              visit.&quot;
             </li>
           </ul>
           <p>
-            "At DelightDine Hub Resto, we believe dining should be an
+            &quot;At DelightDine Hub Resto, we believe dining should be an
             experience, not just a meal. Join us for an unforgettable journey of
-            flavors and hospitality."
+            flavors and hospitality.&quot;
           </p>
         </section>
 
