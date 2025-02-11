@@ -16,9 +16,7 @@ export default function Home() {
         </div>
         <div>
           <div className={classes.hero}>
-            <h1>
-              Welcome to DelightDine Hub Resto, a Symphony of Flavors Await.
-            </h1>
+            <h1>Welcome to Delight-Dine-Resto, a Symphony of Flavors Await.</h1>
             <p>
               &quot;Join us at DelightDine Hub Resto, where every meal is a
               celebration of flavor, quality, and exceptional service. Come and
