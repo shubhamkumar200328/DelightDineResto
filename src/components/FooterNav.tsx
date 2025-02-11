@@ -1,25 +1,3 @@
-// import React from "react"
-// import Navlink from "./Nav-link"
-
-// function FooterNav() {
-//   return (
-//     <div className=" CdivOuter">
-//       <div className="CdivNavigation">
-//         <h1 className=" text-red-400 text-4xl text-center mt-7">
-//           Footer Navigation
-//         </h1>
-//         <ul>
-//           <li className="Cli">
-//             <Navlink href="/about">AboutUs</Navlink>
-//           </li>
-//         </ul>
-//       </div>
-//     </div>
-//   )
-// }
-
-// export default FooterNav
-
 import React from "react"
 import styles from "@/components/FooterNav.module.css"
 import Link from "next/link"
@@ -29,7 +7,7 @@ const FooterNav = () => {
   return (
     <footer className={styles.footerContainer}>
       <div className={styles.footerContent}>
-        <div className={styles.logo}>DelightDine Hub Resto</div>
+        <div className={styles.logo}>Delight-Dine-Resto</div>
         <div className={styles.section}>
           <ul>
             <li className={styles.link}>
@@ -48,7 +26,7 @@ const FooterNav = () => {
         </div>
         <div className={styles.section}>
           <p>Phone: (555) 123-4567</p>
-          <p>Email: reservations@delightdinehub.com</p>
+          <p>Email: reservations@delightdineresto.com</p>
           <p>Address: 123 Flavor Street, Gourmet City, Foodland</p>
         </div>
         <div className={styles.socialMedia}>

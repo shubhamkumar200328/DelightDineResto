@@ -17,15 +17,15 @@ function page() {
   return (
     <div>
       <Header />
-      <h1 className=" text-3xl text-center my-11">meals page....</h1>
-      <p className=" text-3xl text-center my-3">
-        <span className=" mr-3">Share Recipe with your favourite ones</span>
+      <p className=" text-3xl text-center my-8">
+        <span className=" mr-3">
+          Forget not to Share Recipe with your favourite ones
+        </span>
         <Link href="/meals/share_meals" className={styles.sharemeals}>
           Share meals →
         </Link>
       </p>
-
-      <div className="CblogDiv1 mx-40 mt-20">
+      <div className="CblogDiv1 mx-40 mt-5">
         <div className="CblogPostDiv">
           <p className="Ccircle">
             <Image
@@ -205,6 +205,7 @@ function page() {
           </p>
         </div>
       </div>
+
       <div className=" mt-40">
         <FooterNav />
       </div>

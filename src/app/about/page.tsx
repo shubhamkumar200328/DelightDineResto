@@ -30,14 +30,14 @@ function page() {
 
             <div className={classes.restoIntroP}>
               <h1>Introduction: </h1>
-              Welcome to DelightDine Hub Resto, where culinary artistry meets a
+              Welcome to Delight-Dine-Resto, where culinary artistry meets a
               warm and inviting atmosphere. Established in 1985, our restaurant
               was founded with a passion for creating memorable dining
               experiences. Our mission is to offer exceptional food, impeccable
               service, and a welcoming environment that makes every guest feel
-              like family. At DelightDine Hub Resto, we value quality,
-              creativity, and sustainability, striving to provide a dining
-              experience that delights the senses and nourishes the soul.
+              like family. At Delight-Dine-Resto, we value quality, creativity,
+              and sustainability, striving to provide a dining experience that
+              delights the senses and nourishes the soul.
             </div>
           </li>
           <li>
@@ -45,7 +45,7 @@ function page() {
             <p>Chef's Bio: </p>
             <p>Chef David Martinez - Our Culinary Maestro</p>
             With over 5 years of culinary experience, Chef David Martinez leads
-            the kitchen at DelightDine Hub Resto with unparalleled expertise and
+            the kitchen at Delight-Dine-Resto with unparalleled expertise and
             creativity. Trained at Prestigious Culinary School and having worked
             in renowned kitchens around the world, Chef David Martinez brings a
             unique blend of traditional techniques and innovative flair to our

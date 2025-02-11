@@ -17,9 +17,7 @@ function Header() {
               priority
             />
           </p>
-          <p className=" mt-4 ml-3 font-bold font-mono">
-            DelightDine Hub Resto
-          </p>
+          <p className=" mt-4 ml-3 font-bold font-mono">Delight-Dine-Resto</p>
         </div>
         <div>
           <ul className="Cul">
