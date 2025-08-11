@@ -28,7 +28,7 @@
 .BooTable {
   text-align: center;
   margin: 40px;
-  border: 2px solid white;
+  border: 2px solid rgb(105, 102, 102);
   border-radius: 7px;
   padding: 5px;
   font-size: 25px;
@@ -44,4 +44,72 @@
   font-size: xx-large;
   margin: 40px 0;
   text-align: center;
+}
+
+
+/* app/reservation/page.module.css */
+
+.container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 2rem;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.formGroup {
+  color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+.formGroup input,
+.formGroup textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  border-color: #0070f3;
+  outline: none;
+}
+
+.submitBtn {
+  padding: 0.9rem;
+  background-color: #416d2f;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitBtn:hover {
+  background-color: #4d2727;
 }
