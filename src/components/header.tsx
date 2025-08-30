@@ -1,14 +1,21 @@
-import React from "react"
-import Link from "next/link"
-import logoImg from "@/assets/logo_1.jpg"
-import Image from "next/image"
-import Navlink from "./Nav-link"
+import React from 'react';
+import Link from 'next/link';
+import logoImg from '@/assets/logo_1.jpg';
+import Image from 'next/image';
+import {
+  SignInButton,
+  SignOutButton,
+  SignUpButton,
+  // UserButton,
+  SignedIn,
+  SignedOut,
+} from '@clerk/nextjs';
 
 function Header() {
   return (
     <>
-      <div className="CHeader">
-        <div className="Clogo">
+      <div className="CHeader flex justify-between">
+        <div className="Clogo flex-shrink-0">
           <p>
             <Image
               src={logoImg}
@@ -17,28 +24,53 @@ function Header() {
               priority
             />
           </p>
-          <p className=" mt-4 ml-3 font-bold font-mono">Delight-Dine-Resto</p>
+          <Link href="/" className=" mt-4 ml-1 font-bold font-mono">
+            DDH-Resto
+          </Link>
         </div>
-        <div>
-          <ul className="Cul">
-            <li className="Cli">
-              <Navlink href="/meals">Explore Meals</Navlink>
-            </li>
-            <li className="Cli">
-              <Navlink href="/community">Foodies Community</Navlink>
-            </li>
-            <li className="Cli">
-              <Navlink href="/reservation">Reserve YourTable</Navlink>
-            </li>
-            <li className="Cli">
-              <Navlink href="/login">Signup/login</Navlink>
-            </li>
-          </ul>
+
+        <div className="Cul ">
+          <SignedOut>
+            <Link href="/meals" className="Cli justify-center text-center">
+              Explore Meals
+            </Link>
+            <Link href="/community" className="Cli">
+              Foodies Community
+            </Link>
+            <Link href="/about" className="Cli">
+              About
+            </Link>
+            <SignInButton mode="modal">
+              <button className=" mr-4 mb-1">Sign In</button>
+            </SignInButton>
+            <SignUpButton mode="modal">
+              <button className="mb-1 mr-2">Sign Up</button>
+            </SignUpButton>
+          </SignedOut>
+          <SignedIn>
+            <Link href="/meals" className="Cli">
+              Explore Meals
+            </Link>
+            <Link href="/community" className="Cli">
+              Foodies Community
+            </Link>
+            <Link href="/reservation" className="Cli">
+              Reserve YourTable
+            </Link>
+
+            <Link href="/user-profile" className="Cli ">
+              Profile
+            </Link>
+            <SignOutButton>
+              <button className="mb-1 mr-2">Sign Out</button>
+            </SignOutButton>
+            {/* <UserButton afterSignOutUrl="/" /> */}
+          </SignedIn>
         </div>
       </div>
       {/* <hr /> */}
     </>
-  )
+  );
 }
 
-export default Header
+export default Header;

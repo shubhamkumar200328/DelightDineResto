@@ -1,16 +1,13 @@
-import Header from "@/components/header"
-import React from "react"
-import classes from "@/app/community/page.module.css"
-import Image from "next/image"
-import communityPerks from "@/app/community/assets/community Perks.jpg"
-import share_discover from "@/app/community/assets/discover recipes.jpg"
-import likemindedpeople from "@/app/community/assets/like-minded people.jpg"
-import FooterNav from "@/components/FooterNav"
+import React from 'react';
+import classes from '@/app/community/page.module.css';
+import Image from 'next/image';
+import communityPerks from '@/app/community/assets/community Perks.jpg';
+import share_discover from '@/app/community/assets/discover recipes.jpg';
+import likemindedpeople from '@/app/community/assets/like-minded people.jpg';
 
 function page() {
   return (
     <>
-      <Header />
       <div className={classes.divSection}>
         <h1>
           One shared passion: <span>Food</span>
@@ -43,11 +40,8 @@ function page() {
           </li>
         </ul>
       </div>
-      <div className=" mt-40">
-        <FooterNav />
-      </div>
     </>
-  )
+  );
 }
 
-export default page
+export default page;

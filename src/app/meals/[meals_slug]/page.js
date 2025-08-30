@@ -1,17 +1,16 @@
-"use client";
+'use client';
 
-import React, { useState, useEffect } from "react";
-import Header from "@/components/header";
-import FooterNav from "@/components/FooterNav";
+import React, { useState, useEffect } from 'react';
 import { FaPlus, FaMinus, FaShoppingCart } from 'react-icons/fa';
 
 const PLACEHOLDER_DATA = {
-  description: "A delicious meal, freshly prepared with high-quality ingredients.",
-  imageUrl: "https://placehold.co/400x300/FACC15/FFFFFF?text=Delicious+Meal"
+  description:
+    'A delicious meal, freshly prepared with high-quality ingredients.',
+  imageUrl: 'https://placehold.co/400x300/FACC15/FFFFFF?text=Delicious+Meal',
 };
 
 function Page() {
-  const [mealName, setMealName] = useState("");
+  const [mealName, setMealName] = useState('');
   const [mealPrice, setMealPrice] = useState(0);
   const [quantity, setQuantity] = useState(1);
 
@@ -29,33 +28,36 @@ function Page() {
   }, []);
 
   const handleQuantityChange = (delta) => {
-    setQuantity(prevQuantity => Math.max(1, prevQuantity + delta));
+    setQuantity((prevQuantity) => Math.max(1, prevQuantity + delta));
   };
 
   const handleOrder = () => {
     if (mealName && mealPrice > 0) {
-      alert(`Order placed for ${quantity} x ${mealName}! Total: $${(quantity * mealPrice).toFixed(2)}`);
+      alert(
+        `Order placed for ${quantity} x ${mealName}! Total: $${(
+          quantity * mealPrice
+        ).toFixed(2)}`,
+      );
     } else {
-      alert("Please select a valid meal.");
+      alert('Please select a valid meal.');
     }
   };
 
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col font-sans">
-      <Header />
       <main className="flex-grow container mx-auto p-4 md:p-8 flex items-center justify-center">
         <div className="bg-white rounded-3xl shadow-2xl overflow-hidden max-w-4xl w-full flex flex-col lg:flex-row">
           <div className="lg:w-1/2 flex items-center justify-center p-6 bg-orange-100">
-            <img 
+            <img
               src={PLACEHOLDER_DATA.imageUrl}
-              alt={mealName || "Meal"}
+              alt={mealName || 'Meal'}
               className="w-full h-auto object-cover rounded-2xl shadow-lg transform transition-transform duration-300 hover:scale-105"
             />
           </div>
 
           <div className="lg:w-1/2 p-8 flex flex-col justify-center">
             <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
-              {mealName || "Meal Not Found"}
+              {mealName || 'Meal Not Found'}
             </h1>
             <p className="text-3xl font-bold text-orange-600 mb-6">
               ${mealPrice.toFixed(2)}
@@ -65,7 +67,9 @@ function Page() {
             </p>
 
             <div className="flex items-center mb-8">
-              <span className="text-gray-800 text-lg font-semibold mr-4">Quantity:</span>
+              <span className="text-gray-800 text-lg font-semibold mr-4">
+                Quantity:
+              </span>
               <div className="flex items-center border border-gray-300 rounded-full overflow-hidden">
                 <button
                   onClick={() => handleQuantityChange(-1)}
@@ -95,7 +99,6 @@ function Page() {
           </div>
         </div>
       </main>
-      <FooterNav />
     </div>
   );
 }

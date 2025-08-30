@@ -1,15 +1,14 @@
-import Header from "@/components/header"
+import Header from '@/components/header';
 
-import Link from "next/link"
+import Link from 'next/link';
 
-import classes from "./page.module.css"
-import ImageSlideshow from "@/components/images/image-slideshow"
-import FooterNav from "@/components/FooterNav"
+import classes from './page.module.css';
+import ImageSlideshow from '@/components/images/image-slideshow';
+import FooterNav from '@/components/FooterNav';
 
 export default function Home() {
   return (
     <>
-      <Header />
       <header className={classes.header}>
         <div className={classes.slideshow}>
           <ImageSlideshow />
@@ -103,9 +102,6 @@ export default function Home() {
           </p>
         </section>
       </main>
-      <div className=" mt-40">
-        <FooterNav />
-      </div>
     </>
-  )
+  );
 }

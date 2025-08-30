@@ -1,13 +1,10 @@
-import React from "react"
-import classes from "@/app/reservation/page.module.css"
-import Header from "@/components/header"
-import Link from "next/link"
-import FooterNav from "@/components/FooterNav"
+import React from 'react';
+import classes from '@/app/reservation/page.module.css';
+import Link from 'next/link';
 
 function page() {
   return (
     <>
-      <Header />
       <div className={classes.divSection}>
         <h1>Reservations Section</h1>
         <h2>
@@ -49,9 +46,8 @@ function page() {
           Resto.
         </p>
       </div>
-      <FooterNav />
     </>
-  )
+  );
 }
 
-export default page
+export default page;

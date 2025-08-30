@@ -1,11 +1,8 @@
-import React from "react"
-import Header from "@/components/header"
-import FooterNav from "@/components/FooterNav"
+import React from 'react';
 
 function page() {
   return (
     <div>
-      <Header />
       <p className=" text-center text-2xl mb-4 mt-4">
         Give Feedback and Earn Cashback!
       </p>
@@ -30,13 +27,9 @@ function page() {
           <li>Flat Rs5 Cashback or up to 10 Coins</li>
           <li>Greeting</li>
         </ol>
-
-        <div className=" mt-40">
-          <FooterNav />
-        </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default page
+export default page;
