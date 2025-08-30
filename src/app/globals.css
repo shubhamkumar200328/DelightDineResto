@@ -3,6 +3,12 @@
 @tailwind utilities;
 
 /* #4e6c50 #f2deba #6d4a4a #630000 #563232*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 body {
   /* background-color: #562e2e; */
   color: aliceblue;
@@ -46,8 +52,8 @@ body {
   display: flex;
   flex-direction: row;
   font-size: xx-large;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .ClogoImg {
   height: 80px;
