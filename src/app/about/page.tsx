@@ -1,20 +1,17 @@
-import React from "react"
-import Header from "../../components/header"
-import classes from "@/app/about/page.module.css"
+import React from 'react';
+import classes from '@/app/about/page.module.css';
 
-import Image from "next/image"
-import restaurants from "@/assets/restaurants.jpg"
-import David_Martinez from "@/app/about/assets/David Martinez.jpg"
-import Sarah_Thompson from "@/app/about/assets/Sarah_Thompson.jpg"
-import Michael_Carter from "@/app/about/assets/Michael_Carter.jpg"
-import Emily_Davis from "@/app/about/assets/Emily_Davis.jpg"
-import James_Rodriguez from "@/app/about/assets/James Rodriguez.jpg"
-import FooterNav from "@/components/FooterNav"
+import Image from 'next/image';
+import restaurants from '@/assets/restaurants.jpg';
+import David_Martinez from '@/app/about/assets/David Martinez.jpg';
+import Sarah_Thompson from '@/app/about/assets/Sarah_Thompson.jpg';
+import Michael_Carter from '@/app/about/assets/Michael_Carter.jpg';
+import Emily_Davis from '@/app/about/assets/Emily_Davis.jpg';
+import James_Rodriguez from '@/app/about/assets/James Rodriguez.jpg';
 
 function page() {
   return (
     <>
-      <Header />
       <div className={classes.divSection}>
         <h1 className={classes.aboutH1}>About Us</h1>
         <ul>
@@ -95,7 +92,7 @@ function page() {
               <li>
                 <p> Emily Davis - Sommelier</p>
                 Our resident wine expert, Emily Davis, curates our extensive
-                wine list and offers expert pairings to enhance your meal.{" "}
+                wine list and offers expert pairings to enhance your meal.{' '}
                 <br />
                 <Image
                   src={Emily_Davis}
@@ -132,11 +129,8 @@ function page() {
           </li>
         </ul>
       </div>
-      <div className=" mt-40">
-        <FooterNav />
-      </div>
     </>
-  )
+  );
 }
 
-export default page
+export default page;

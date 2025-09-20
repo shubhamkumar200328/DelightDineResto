@@ -1,10 +1,6 @@
-import Header from '@/components/header';
-
 import Link from 'next/link';
-
 import classes from './page.module.css';
 import ImageSlideshow from '@/components/images/image-slideshow';
-import FooterNav from '@/components/FooterNav';
 
 export default function Home() {
   return (

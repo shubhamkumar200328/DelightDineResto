@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import Link from 'next/link';
 import logoImg from '@/assets/logo_1.jpg';
@@ -6,7 +7,6 @@ import {
   SignInButton,
   SignOutButton,
   SignUpButton,
-  // UserButton,
   SignedIn,
   SignedOut,
 } from '@clerk/nextjs';
@@ -41,7 +41,7 @@ function Header() {
               About
             </Link>
             <SignInButton mode="modal">
-              <button className=" mr-4 mb-1">Sign In</button>
+              <button className="mr-4 mb-1">Sign In</button>
             </SignInButton>
             <SignUpButton mode="modal">
               <button className="mb-1 mr-2">Sign Up</button>

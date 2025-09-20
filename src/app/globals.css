@@ -11,14 +11,15 @@
 }
 body {
   /* background-color: #562e2e; */
-  color: aliceblue;
+  color: rgb(8, 8, 8);
+  background-color: white;
 
-  background: rgb(86, 46, 46);
+  /* background: rgb(86, 46, 46);
   background: linear-gradient(
     0deg,
     rgba(86, 46, 46, 1) 53%,
     rgba(11, 58, 26, 1) 100%
-  );
+  ); */
 
   /* background: rgb(34, 193, 195);
   background: linear-gradient(

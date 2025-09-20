@@ -1,9 +1,12 @@
-import React from "react"
-import styles from "@/components/FooterNav.module.css"
-import Link from "next/link"
-import Navlink from "./Nav-link"
+'use client';
+import React, { useState } from 'react';
+import styles from '@/components/FooterNav.module.css';
+import Link from 'next/link';
+import Navlink from './Nav-link';
 
 const FooterNav = () => {
+  const [email, setEmail] = useState('');
+
   return (
     <footer className={styles.footerContainer}>
       <div className={styles.footerContent}>
@@ -49,16 +52,23 @@ const FooterNav = () => {
           </a>
         </div>
         <div className={styles.newsletterSignup}>
-          <input type="email" placeholder="Subscribe to our newsletter" />
-          <button>Subscribe</button>
+          {/* <input type="email" placeholder="Subscribe to our newsletter" /> */}
+          <input
+            type="email"
+            placeholder="Subscribe to our newsletter"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            suppressHydrationWarning
+          />
+          <button suppressHydrationWarning>Subscribe</button>
         </div>
         <div className={styles.legal}>
           <p>&copy; 2024 DelightDine Hub Resto. All rights reserved.</p>
           <p>
             <a href="/privacy" className={styles.link}>
               Privacy Policy
-            </a>{" "}
-            |{" "}
+            </a>{' '}
+            |{' '}
             <a href="/terms" className={styles.link}>
               Terms of Service
             </a>
@@ -66,7 +76,7 @@ const FooterNav = () => {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default FooterNav
+export default FooterNav;
