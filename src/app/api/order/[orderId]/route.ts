@@ -26,14 +26,13 @@ export async function GET(req: NextRequest) {
   }
 }
 
-// The function signature has been corrected to properly handle the `request` and `params`.
 export async function PATCH(
   request: NextRequest,
-  { params }: { params: { orderId: string } },
+  context: { params: { orderId: string } },
 ) {
   try {
-    // The orderId is correctly destructured from the params object.
-    const { orderId } = params;
+    // Destructure `orderId` from `context.params`
+    const { orderId } = context.params;
     const { status } = await request.json();
 
     if (!orderId) {
@@ -50,7 +49,6 @@ export async function PATCH(
       );
     }
 
-    // Call the database function to update the order status.
     await updateOrderStatus(orderId, status);
 
     return NextResponse.json({ message: 'Order status updated successfully.' });
