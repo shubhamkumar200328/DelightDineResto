@@ -1,15 +1,14 @@
-// components/FoodCard.tsx
 'use client';
 import { Food } from '../../types/food';
 import { useCartStore } from '@/store/cartStore';
 
 export default function FoodCard({ food }: { food: Food }) {
   const addToCart = useCartStore((s) => s.addToCart);
-  const cart = useCartStore((s) => s.cart); // to watch cart changes if needed
+  const cart = useCartStore((s) => s.cart);
 
   console.log(cart);
   return (
-    <div className="border border-gray-950 rounded-lg shadow-md max-w-[40%]">
+    <div className="border border-gray-950 rounded-lg shadow-md max-w-[88%]">
       <img
         src={food.imageUrl}
         alt={food.title}
@@ -33,17 +32,6 @@ export default function FoodCard({ food }: { food: Food }) {
         >
           Add to Cart
         </button>
-        {/* <button
-          onClick={() => {
-            addToCart(food);
-            setTimeout(() => {
-              console.log('Cart after add:', useCartStore.getState().cart);
-            }, 0);
-          }}
-          className="mt-2 w-full bg-blue-600 text-white py-1 rounded"
-        >
-          Add to Cart
-        </button> */}
       </div>
     </div>
   );

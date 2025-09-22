@@ -1,4 +1,3 @@
-// src/lib/foods.ts
 import clientPromise from './mongodb';
 import { Food } from '../../types/food';
 
@@ -8,7 +7,7 @@ export async function getAllFoods(): Promise<Food[]> {
   const rawFoods = await db.collection('foodItems').find().toArray();
 
   return rawFoods.map((item) => ({
-    id: item._id.toString(), // ✅ normalize here
+    id: item._id.toString(),
     title: item.title,
     subtitle: item.subtitle,
     imageUrl: item.imageUrl,

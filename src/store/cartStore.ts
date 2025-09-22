@@ -1,5 +1,3 @@
-// src/store/cartStore.ts
-
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 import { Food } from '../../types/food';

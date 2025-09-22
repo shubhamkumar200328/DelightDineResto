@@ -48,7 +48,7 @@ function Header() {
             </SignUpButton>
           </SignedOut>
           <SignedIn>
-            <Link href="/meals" className="Cli">
+            <Link href="/menu" className="Cli">
               Explore Meals
             </Link>
             <Link href="/community" className="Cli">

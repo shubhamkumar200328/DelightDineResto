@@ -1,6 +1,5 @@
 import { clerkClient } from '@clerk/nextjs/server';
 import { removeRole, setRole } from '@/app/admin/actions';
-import AddFood from '@/components/AddFood';
 
 export default async function Admin() {
   const client = await clerkClient();
@@ -74,9 +73,6 @@ export default async function Admin() {
             </div>
           );
         })}
-      </div>
-      <div className="border-2 border-zinc-50 p-3">
-        <AddFood />
       </div>
     </>
   );
