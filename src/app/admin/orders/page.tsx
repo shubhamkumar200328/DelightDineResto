@@ -1,10 +1,10 @@
-// app/admin/orders/page.tsx
+//app/admin/orders/page.tsx
 import AdminOrderCard from '@/components/AdminOrderCard';
-import { getOrdersFromDb } from '@/lib/orders';
+import { getAllOrdersForAdmin } from '@/lib/orders';
 import { Order } from '../../../../types/order';
 
 export default async function AdminOrders() {
-  const orders: Order[] = await getOrdersFromDb();
+  const orders: Order[] = await getAllOrdersForAdmin();
 
   return (
     <div className="p-6">

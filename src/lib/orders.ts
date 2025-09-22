@@ -20,19 +20,18 @@
 
 //   return serializedOrders;
 // }
+
 import clientPromise from '@/lib/mongodb';
 import { Order } from '../../types/order';
 import { ObjectId } from 'mongodb';
 import { auth } from '@clerk/nextjs/server';
 
-// Helper function to connect to the database and get the orders collection
 async function getOrdersCollection() {
   const client = await clientPromise;
   const db = client.db();
   return db.collection('orders');
 }
 
-// Helper to serialize an order document from MongoDB
 const serializeOrder = (order: any): Order => {
   return {
     ...order,
@@ -47,9 +46,6 @@ const serializeOrder = (order: any): Order => {
   } as Order;
 };
 
-/**
- * Fetches all orders for the currently authenticated user.
- */
 export async function getOrdersForUser(): Promise<Order[]> {
   const { userId } = await auth();
   if (!userId) {
@@ -63,9 +59,6 @@ export async function getOrdersForUser(): Promise<Order[]> {
   return orders.map(serializeOrder);
 }
 
-/**
- * Fetches all orders from all users, intended for admin use.
- */
 export async function getAllOrdersForAdmin(): Promise<Order[]> {
   const ordersCollection = await getOrdersCollection();
   const orders = await ordersCollection
@@ -75,9 +68,6 @@ export async function getAllOrdersForAdmin(): Promise<Order[]> {
   return orders.map(serializeOrder);
 }
 
-/**
- * Fetches a single order by its unique orderId.
- */
 export async function getOrderById(orderId: string): Promise<Order | null> {
   const ordersCollection = await getOrdersCollection();
   const order = await ordersCollection.findOne({ orderId });
@@ -87,9 +77,6 @@ export async function getOrderById(orderId: string): Promise<Order | null> {
   return serializeOrder(order);
 }
 
-/**
- * Updates the status of a specific order.
- */
 export async function updateOrderStatus(
   orderId: string,
   status: string,

@@ -28,11 +28,10 @@ export async function GET(req: NextRequest) {
 
 export async function PATCH(
   request: NextRequest,
-  context: { params: { orderId: string } },
+  { params }: { params: { orderId: string } },
 ) {
   try {
-    // Destructure `orderId` from `context.params`
-    const { orderId } = context.params;
+    const { orderId } = params;
     const { status } = await request.json();
 
     if (!orderId) {
