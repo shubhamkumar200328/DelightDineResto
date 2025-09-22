@@ -5,6 +5,8 @@ import { ClerkProvider } from '@clerk/nextjs';
 import Header from '@/components/header';
 import FooterNav from '@/components/FooterNav';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -25,6 +27,7 @@ export default function RootLayout({
           <Header />
           {children}
           <SpeedInsights />
+          <ToastContainer position="bottom-right" />
           <div className="mt-40">
             <FooterNav />
           </div>

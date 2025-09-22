@@ -1,4 +1,3 @@
-// app/api/order/[orderId]/route.ts
 import { NextRequest, NextResponse } from 'next/server';
 import clientPromise from '@/lib/mongodb';
 import { getAuth } from '@clerk/nextjs/server';
@@ -28,8 +27,9 @@ export async function GET(req: NextRequest) {
 
 export async function PATCH(
   req: NextRequest,
-  { params }: { params: { orderId: string } },
+  context: { params: { orderId: string } },
 ) {
+  const { params } = context;
   try {
     const { status } = await req.json();
     const client = await clientPromise;
@@ -43,11 +43,11 @@ export async function PATCH(
         { returnDocument: 'after' },
       );
 
-    if (!result) {
+    if (!result || !result.value) {
       return NextResponse.json({ error: 'Order not found' }, { status: 404 });
     }
 
-    return NextResponse.json(result);
+    return NextResponse.json(result.value);
   } catch (error: any) {
     return NextResponse.json({ error: error.message }, { status: 500 });
   }

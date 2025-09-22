@@ -3,8 +3,6 @@
 import React, { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 
-const notify = () => toast('Your table Reserved successfully!');
-
 function ReservationPage({ params = {} }) {
   const unwrappedParams = React.use(params);
 

@@ -57,7 +57,12 @@ function Header() {
             <Link href="/reservation" className="Cli">
               Reserve YourTable
             </Link>
-
+            <Link href="/cart" className="Cli">
+              Cart
+            </Link>
+            <Link href="/order" className="Cli">
+              Orders
+            </Link>
             <Link href="/user-profile" className="Cli ">
               Profile
             </Link>
