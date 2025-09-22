@@ -59,31 +59,3 @@ export async function PATCH(
     );
   }
 }
-
-// export async function PATCH(
-//   req: NextRequest,
-//   context: { params: { orderId: string } },
-// ) {
-//   const { params } = context;
-//   try {
-//     const { status } = await req.json();
-//     const client = await clientPromise;
-//     const db = client.db();
-
-//     const result = await db
-//       .collection('orders')
-//       .findOneAndUpdate(
-//         { orderId: params.orderId },
-//         { $set: { status } },
-//         { returnDocument: 'after' },
-//       );
-
-//     if (!result || !result.value) {
-//       return NextResponse.json({ error: 'Order not found' }, { status: 404 });
-//     }
-
-//     return NextResponse.json(result.value);
-//   } catch (error: any) {
-//     return NextResponse.json({ error: error.message }, { status: 500 });
-//   }
-// }
