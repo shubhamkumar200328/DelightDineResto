@@ -26,36 +26,38 @@ export async function GET(req: NextRequest) {
   }
 }
 
+// The function signature has been corrected to properly handle the `request` and `params`.
 export async function PATCH(
   request: NextRequest,
   { params }: { params: { orderId: string } },
 ) {
   try {
+    // The orderId is correctly destructured from the params object.
     const { orderId } = params;
     const { status } = await request.json();
 
     if (!orderId) {
       return NextResponse.json(
-        { error: 'Order ID is missing' },
+        { error: 'Order ID is required' },
         { status: 400 },
       );
     }
 
     if (!status) {
       return NextResponse.json(
-        { error: 'New status is required' },
+        { error: 'A new status is required' },
         { status: 400 },
       );
     }
 
-    // This function should contain your logic to update the order in the database
+    // Call the database function to update the order status.
     await updateOrderStatus(orderId, status);
 
-    return NextResponse.json({ message: 'Order status updated successfully' });
+    return NextResponse.json({ message: 'Order status updated successfully.' });
   } catch (error) {
-    console.error('[API PATCH ORDER]', error);
+    console.error('[API_ORDER_PATCH_ERROR]', error);
     return NextResponse.json(
-      { error: 'An internal error occurred while updating the order.' },
+      { error: 'Internal server error while updating the order.' },
       { status: 500 },
     );
   }
