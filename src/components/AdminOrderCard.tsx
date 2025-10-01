@@ -51,38 +51,3 @@ export default function AdminOrderCard({ order }: { order: Order }) {
     </div>
   );
 }
-
-// // components/AdminOrderCard.tsx
-// 'use client';
-// import { useState } from 'react';
-// import OrderStatus from './OrderStatus';
-
-// export default function AdminOrderCard({ order }: { order: any }) {
-//   const [status, setStatus] = useState(order.status);
-
-//   const updateStatus = async (newStatus: string) => {
-//     await fetch(`/api/order/${order.orderId}`, {
-//       method: 'PATCH',
-//       body: JSON.stringify({ status: newStatus }),
-//     });
-//     setStatus(newStatus);
-//   };
-
-//   return (
-//     <div className="border p-4 rounded mb-2">
-//       <p className="font-bold">Order ID: {order.orderId}</p>
-//       <OrderStatus status={status} />
-//       <div className="mt-2 flex gap-2">
-//         {['Preparing', 'Out for Delivery', 'Delivered'].map((s) => (
-//           <button
-//             key={s}
-//             onClick={() => updateStatus(s)}
-//             className="bg-blue-600 text-white px-3 py-1 rounded"
-//           >
-//             {s}
-//           </button>
-//         ))}
-//       </div>
-//     </div>
-//   );
-// }

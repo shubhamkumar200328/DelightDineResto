@@ -26,36 +26,36 @@ export async function GET(req: NextRequest) {
   }
 }
 
-// export async function PATCH(
-//   request: NextRequest,
-//   { params }: { params: { orderId: string } },
-// ) {
-//   try {
-//     const { orderId } = params;
-//     const { status } = await request.json();
+export async function PATCH(
+  request: NextRequest,
+  { params }: { params: { orderId: string } },
+) {
+  try {
+    const { orderId } = params;
+    const { status } = await request.json();
 
-//     if (!orderId) {
-//       return NextResponse.json(
-//         { error: 'Order ID is required' },
-//         { status: 400 },
-//       );
-//     }
+    if (!orderId) {
+      return NextResponse.json(
+        { error: 'Order ID is required' },
+        { status: 400 },
+      );
+    }
 
-//     if (!status) {
-//       return NextResponse.json(
-//         { error: 'A new status is required' },
-//         { status: 400 },
-//       );
-//     }
+    if (!status) {
+      return NextResponse.json(
+        { error: 'A new status is required' },
+        { status: 400 },
+      );
+    }
 
-//     await updateOrderStatus(orderId, status);
+    await updateOrderStatus(orderId, status);
 
-//     return NextResponse.json({ message: 'Order status updated successfully.' });
-//   } catch (error) {
-//     console.error('[API_ORDER_PATCH_ERROR]', error);
-//     return NextResponse.json(
-//       { error: 'Internal server error while updating the order.' },
-//       { status: 500 },
-//     );
-//   }
-// }
+    return NextResponse.json({ message: 'Order status updated successfully.' });
+  } catch (error) {
+    console.error('[API_ORDER_PATCH_ERROR]', error);
+    return NextResponse.json(
+      { error: 'Internal server error while updating the order.' },
+      { status: 500 },
+    );
+  }
+}
